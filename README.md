@@ -1,2 +1,2 @@
 # win-guide
-Windows guide post, custom install and setup.
+Windows guide, post custom install and setup.
