@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Win Guide</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFD700'/%3E%3Ccircle cx='35' cy='40' r='7' fill='black'/%3E%3Ccircle cx='65' cy='40' r='7' fill='black'/%3E%3Cpath d='M30 65 Q50 80 70 65' stroke='black' stroke-width='8' fill='none'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        :root {
+            --background: #ffffff;
+            --text: #333333;
+            --code-bg: #012456;
+            --code-text: #FFFFFF;
+            --note-bg: #f0f9ff;
+            --note-border: #2563eb;
+            --info-bg: #f0fdf4;
+            --info-border: #16a34a;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #1a1a1a;
+                --text: #e5e5e5;
+                --code-bg: #012456;
+                --code-text: #FFFFFF;
+                --note-bg: #1e293b;
+                --note-border: #3b82f6;
+                --info-bg: #132e1f;
+                --info-border: #22c55e;
+            }
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text);
+            background: var(--background);
+        }
+        code {
+            background: var(--code-bg);
+            color: var(--code-text);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Cascadia Code', 'Consolas', monospace;
+        }
+        pre {
+            background: var(--code-bg);
+            color: var(--code-text);
+            padding: 1em;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        .app-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .app-table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .app-table td:first-child {
+            white-space: nowrap;
+            width: 200px;
+            font-weight: 500;
+        }
+        .note {
+            background: var(--note-bg);
+            border-left: 4px solid var(--note-border);
+            padding: 1em;
+            margin: 1em 0;
+        }
+        .info {
+            background: var(--info-bg);
+            border-left: 4px solid var(--info-border);
+            padding: 1em;
+            margin: 1em 0;
+        }
+        a {
+            color: #16a34a;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #15803d;
+        }
+        @supports (font-variation-settings: normal) {
+            body {
+                font-family: 'Inter var', system-ui, -apple-system, sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Windows guide post custom install install and setup</h1>
+	
+    <p>In this Windows installation I have removed tracking and Windows bloatware using <a href="https://github.com/ChrisTitusTech/winutil" target="_blank" >this tool</a>.</p>
+    <p>I first created a Microwin.ico image from a legitimate windows ICO and installed this using Ventoy.</p>
+      
+    <p>I then ran some tweaks though the powershell utility.</p>
+
+    <code>irm "https://christitus.com/win" | iex</code>
+
+    <p>For security I have set an admin dialog that will require your password or fingerprint anytime you need to use your admin privileges (installing new apps etc).
+    This is super secure and stops a lot of hacking / malware attempts.</p>
+
+    <div class="info">
+        If you need to search Microsoft Windows click start, or press ⊞+S or press the ⊞ key, then begin typing.
+    </div>
+
+    <h2>Applications</h2>
+
+    <p>I have installed quite a few applications for you.</p>
+
+    <table class="app-table">
+        <tr>
+            <td>7-zip</td>
+            <td>Utilities for unzipping and zipping folders</td>
+        </tr>
+        <tr>
+            <td>Auto Dark Mode</td>
+            <td>Extra Dark Mode Options</td>
+        </tr>
+        <tr>
+            <td>Brave</td>
+            <td>Privacy browser with adblocking
+                <div class="info">
+                    If a web page doesn't work:<br>
+                    1. Switch off Brave shields<br>
+                    2. If still not working copy the URL to edge
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Discord</td>
+        </tr>
+        <tr>
+            <td>Files</td>
+            <td>An improved open source file explorer</td>
+        </tr>
+        <tr>
+            <td>LocalSend</td>
+            <td>A way to transfer documents and images between devices 
+                <div class="info">
+                    1. Install <a href="https://apps.apple.com/us/app/localsend/id1661733229" target="_blank">LocalSend</a> on your phone<br>
+                    2. Make sure you are on the same WiFi network
+                </div>
+	    </td>
+        </tr>
+        <tr>
+            <td>Microsoft Office 365</td>
+            <td>Just login with your university email address</td>
+        </tr>
+        <tr>
+            <td>Minecraft</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Obsidian</td>
+            <td>A Markdown editor I'd recommend using for your lecture notes and writing.
+                <div class="info">
+                    Recommend watching: <a href="https://www.youtube.com/watch?v=DbsAQSIKQXk" target="_blank">Obsidian by noboilerplate</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Okular</td>
+            <td>A free PDF viewer and editor</td>
+        </tr>
+        <tr>
+            <td>PowerToys</td>
+            <td>An addon by Microsoft lots of useful features.
+                <div class="info">
+                    It is in the extra icons (right side of taskbar)<br>
+                    See: <a href="https://learn.microsoft.com/en-gb/windows/powertoys/" target="_blank">PowerToys Documentation</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Pure Battery add-on</td>
+            <td>Shows the current battery percentage in the taskbar (bottom right).</td>
+        </tr>
+        <tr>
+            <td>Steam</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Stremio</td>
+            <td>A streaming app for tv and film (free and pirated).</td>
+        </tr>
+        <tr>
+            <td>SupportAssist</td>
+            <td>Dells support app helps with issues and driver updates if something isn't working.</td>
+        </tr>
+        <tr>
+            <td>Thunderbird</td>
+            <td>An email client - a good place for your personal emails, login with gmail.</td>
+        </tr>
+        <tr>
+            <td>UniGetUI</td>
+            <td>A UI utility for winget (see below).</td>
+        </tr>
+        <tr>
+            <td>VLC Media Player</td>
+            <td>A video player</td>
+        </tr>
+        <tr>
+            <td>Zotero</td>
+            <td>A software for keeping track of research and websites (useful for dissertation)
+                <div class="info">
+                    I have also Installed the Zotero connector in Brave.<br>
+                    See: <a href="https://www.zotero.org/support/quick_start_guide" target="_blank">Zotero Quick Start Guide</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Useful websites</h2>
+    <table class="app-table">
+        <tr>
+            <td><a href="https://libgen.onl" target="_blank">Library Genesis</a></td>
+            <td>A place to download free books and articles (piracy) (might not work on uni WiFi)</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.sci-hub.pub" target="_blank">Sci-Hub</a></td>
+            <td>A place to download research articles for free (piracy) (might not work on uni WiFi)</td>
+        </tr>
+    </table>
+
+    <p>I have included these along with other useful search engines and AI tools as bookmarks in Brave.</p>
+
+    <h2>Changing your password and setting up your fingerprint:</h2>
+
+    <ul>
+        <li>Go to Settings -> Account -> Sign-in Options</li>
+        <li>Enter current password to get in</li>
+        <li>Then have options to change password and setup a fingerprint</li>
+    </ul>
+
+    <h2>Battery</h2>
+
+    <p>I have done some tests on the battery it seems to be working well, you should get approx 5hrs in energy saver mode.</p> 
+    <p>When on battery I would recommend putting the laptop in 'energy saver' mode it can be found in the quick settings (bottom right of the taskbar).</p>
+    <p>Other info on battery care can be found <a href="https://support.microsoft.com/en-gb/windows/caring-for-your-battery-in-windows-2db3e37f-5e7d-488e-9086-ed15320519e4" target="_blank" >Here</a>.</p> 
+
+    <h3>Checking battery heath using <code>powercfg</code> in the terminal</h3>
+    <ol>
+        <li>Press ⊞+X or right click the start menu</li>
+        <li>Click Terminal (admin)</li>
+        <li>Enter your password or use your fingerprint</li>
+        <li>Type <code>powercfg /batteryreport</code> and press enter</li>
+
+	<li>The generated report can be found <a href="C:\Users\Emile\battery-report.html" target="_blank">Here</a>
+    </ol>
+
+    <h2>Backups</h2>
+
+    <h3>Back up and Restore</h3>
+    <ul>
+	<li>Back up and Restore (doesn't require Microsoft account) can be found by:
+	<ul>
+		<li>Pressing ⊞+S</li>
+		<li>Search for Control Panel</li>
+		<li>Control Panel -> System and Security -> Back up and Restore (Windows 7).</li>
+	</ul>
+  	</li> 
+  	<li>I have created a System Image backup of Windows on 27/02/2025 it can be found at:
+	<ul>
+		<li>Secondary Disk D:\WindowsImageBackup\</li>
+	</ul>
+	</li>
+	<li>You can return to this System Image backup at any time using 'Back up and Restore (Windows 7)' if anything in windows breaks badly or you want a "fresh install". Just make sure to backup all your files on a external drive first.</li>
+	<li>I have also setup Windows Backup this will backup all your files and the system state every 2 weeks on Sunday at 7:00pm</li>
+    </ul>
+
+    <h3>Windows Back Up - Shouldn't need use but might be useful to have a backup on OneDrive just in case your laptop is stolen</h3>
+    <ul>
+	<li>Windows Back Up (requires Microsoft account - I would recommend against using your university email as you may be locked out of this when you graduate) can be found by:
+	<ul>
+		<li>Pressing ⊞+S</li>
+		<li>Search for Windows Back Up</li>
+	</ul>
+	</li>
+	<li>Or <a href="ms-settings:backup">open Backup and Restore</a> in the system Settings.</li>
+     </ul>
+
+    <h2>File History</h2>
+    <p>I have setup File History this creates automatic backups of all files every hour onto your secondary disk D:\FileHistory</p>
+    <p>To restore any files:
+    <ul>
+		<li>Press ⊞+S</li>
+		<li>Search for Control Panel</li>
+		<li>Control Panel -> System and Security -> File History -> Restore your Files with File History.</li>
+    </ul>
+    </p>
+
+    <h2><code>winget</code></h2>
+
+    <p>I've installed a few things using the <code>winget</code> command in the Terminal.<br>
+    <code>winget</code> is very useful for installing a wide variety programs and applications (packages).</p>
+
+    <h3>Using 'UniGetUi' to interface with <code>winget</code></h3>
+    
+    <p>I have installed the program 'UniGetUI' to enable the easy installation and updating of <code>winget</code> packages.</p>
+
+    <ul>
+        <li>'UniGetUi' can be found in the 'All' list in the 'Start Menu' or by searching the 'Start Menu'.</li>
+    </ul>
+
+    <p>To install a <code>winget</code> package.
+
+    <ol>
+        <li>Navigate to the 'Discover Packages' tab on the left.</li>
+        <li>You can then search and install new <code>winget</code> packages.</li>
+        <li>It will ask you for your password or fingerprint for each package install.</li>
+    </ol>
+
+    <p>To update any packages installed through <code>winget</code>.
+
+    <ol> 
+        <li>Navigate to the 'Software Updates' tab on the left.</li>
+        <li>Then click update selected packages.</li>
+        <li>It will ask you for your password or fingerprint for each package update.</li>
+    </ol>
+
+    <h3>Using <code>winget</code> in the terminal</h3>
+    <ol>
+        <li>Press ⊞+X or right click the start menu</li>
+        <li>Click Terminal (admin)</li>
+        <li>Enter your password or use your fingerprint</li>
+        <li>Type <code>winget install (package)</code> replace (package) with any application or program you want to install</li>
+    </ol>
+
+    <div class="note">
+        <h3>Example</h3>
+        <p>Install neofetch (A package to show 'About This PC' in the terminal)</p>
+        <pre><code>winget install neofetch</code></pre>
+
+        <p>We can now type <code>neofetch</code> in the terminal, the output is:</p>
+
+        <pre>llllllllllllllll   llllllllllllllll            Emile@DESKTOP-87R4EJD
+llllllllllllllll   llllllllllllllll            --------------
+llllllllllllllll   llllllllllllllll            OS: Windows 11
+llllllllllllllll   llllllllllllllll            Build: 24H2 (26100)
+llllllllllllllll   llllllllllllllll            Uptime: 0 days, 0 hours, 41 minutes
+llllllllllllllll   llllllllllllllll            Resolution: 1920x1200 @59Hz
+llllllllllllllll   llllllllllllllll            Terminal: Administrator: Windows PowerShell
+llllllllllllllll   llllllllllllllll            CPU: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+llllllllllllllll   llllllllllllllll            GPU: Intel(R) UHD Graphics
+                                               Memory: 10811 MB / 65259 MB (16% in use)
+llllllllllllllll   llllllllllllllll            Disk: C:\ 953.1 GB (866.61 GB free)
+llllllllllllllll   llllllllllllllll
+llllllllllllllll   llllllllllllllll            Mem%:  -=[ //////////////////// ]=-
+llllllllllllllll   llllllllllllllll
+llllllllllllllll   llllllllllllllll            Disk%: -=[ //////////////////// ]=-
+llllllllllllllll   llllllllllllllll
+llllllllllllllll   llllllllllllllll
+llllllllllllllll   llllllllllllllll
+llllllllllllllll   llllllllllllllll</pre>
+    </div>
+
+    <ul>
+        <li>The terminal can also be used to update <code>winget</code> packages, using <code>winget update (package)</code></li>
+    </ul>
+
+    <div class="note"> 
+        <h3>Example</h3>
+        <p><code>winget update neofetch</code></p>
+    </div>
+
+    <h2>Issues with Microsoft Store</h2>
+
+    <p>Due to removing some bloatware installation some software using the Microsoft Store fails with Code: 0x80040154</p>
+
+    <ul>
+        <li>If this happens try to check the internet for an alternative way to install the package.</li>
+        <li>Else use <code>winget</code>, either via UniGetUI or in the Terminal (admin).</li>
+    </ul>
+
+    <div class="note">
+        <h3>Example</h3>
+        <p>Installing Teams from the Microsoft Store using <code>winget</code> in the Terminal.</p>
+
+        <pre><code>winget install teams</code></pre>
+
+        <p>Returns:</p>
+
+        <pre>Multiple packages found matching input criteria. Please refine the input.
+Name                    Id                      Source
+-------------------------------------------------------
+Microsoft Teams         XP8BT8DW290MPQ          msstore
+Microsoft Teams classic Microsoft.Teams.Classic winget
+Microsoft Teams         Microsoft.Teams         winget</pre>
+
+        <p>To force install from the store run.</p>
+        <pre><code>winget install XP8BT8DW290MPQ</code></pre>
+    </div>
+</body>
+</html>
